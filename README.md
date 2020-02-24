@@ -71,11 +71,11 @@ Lets consider you need to create a container, customised for your own project. Y
 
 Open a new file named ``Dockerfile``  in any Editor. Paste the content given below:
 ```
-# Download base image ubuntu 18.04
+# Download base image ubuntu 18.04 ( This will download image from DockerHub is there is no image available in local machine)
 FROM ubuntu:18.04
 
-# Most important of all give this your own name
-MAINTAINER AbhishekBudruk
+# You can give your name here
+MAINTAINER abhishekbudruk
 
 # This will give you all the latest updates and required packages to start
 RUN apt-get update \
@@ -93,11 +93,13 @@ RUN apt-get update
 # Installing python and its dependencies
 RUN apt-get install -y python-pip python-dev build-essential
 
-# Copy the local folder of your app to docker container
-# Consider this app folder in placed in the same folder as your Dockerfile
-COPY app/ /app
+# Copy the local folder of your app to docker container ( localfolder : flask_webapp  and Folder inside Container : /app)
+# Consider this flask_webapp folder in placed in the same folder as your Dockerfile
 
-# Navigate to yoru app directory
+# This  /app folder refers to the folder inside your docker container.
+COPY flask_webapp/ /app
+
+# Navigate to your app directory
 WORKDIR /app
 
 # Install you application dependencies
