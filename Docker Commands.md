@@ -129,7 +129,3 @@ docker save -o <file_name.tar> <the_given_name>
 ```
 
 
-## Donation
-If this page helps you reduce time to develop, you can give me a *__Star__* on this repository.
-
-
