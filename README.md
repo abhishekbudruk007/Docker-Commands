@@ -3,7 +3,7 @@ This repository will give you quick overview of Docker **Installations** and **D
 
 
 ## Installations 
-- [Docker Installation Guide for **Windows 7**](https://github.com/abhishekbudruk007/Docker-Commands/blob/master/Docker%20Installation%20Guide%20(%20Windows%2010%20).md)
+- [Docker Installation Guide for **Windows 7**](https://github.com/abhishekbudruk007/Docker-Commands/blob/master/Docker%20Installation%20Guide%20for%20Windows%2010.md)
 - [Docker Installation Guide for **CentOS 7**](https://github.com/abhishekbudruk007/Docker-Commands/blob/master/Docker%20Installation%20Guide%20(%20CentOS%207%20).md)
 
 
